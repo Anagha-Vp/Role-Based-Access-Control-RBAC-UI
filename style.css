@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark gray text for better contrast */
+    margin: 0;
+    padding: 0;
+    background-color: #efeceb;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #007bff; /* Primary color for header */
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Styles */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    background-color: #007bff; /* Primary color for headers */
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1rem;
+    border-radius: 10px 10px 0 0;
+    text-transform: uppercase;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Table Styles */
+.table {
+    margin: 0;
+    background: white;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+
+.table th {
+    color: #007bff; /* Highlight table headers */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.table td {
+    padding: 0.75rem;
+}
+
+/* Buttons */
+.btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #343a40;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 500px;
+}
+
+.modal.show {
+    display: block; /* Ensures the modal becomes visible */
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.modal .form-label {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.modal .btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Permissions Checkboxes */
+.permission-checkbox {
+    margin-right: 0.5rem;
+}
+
+#rolePermissions {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#rolePermissions label {
+    background: #f8f9fa;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    cursor: pointer;
+}
